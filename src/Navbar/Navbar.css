@@ -3,16 +3,16 @@
     flex-direction: row;
     float: left;
     align-items: center;
-    padding-left: 2rem;
     width: 100%;
 }
 
 .Navbar > p {
     font-size: 40px;
-    margin-left: 1rem;
+    padding-left: 2rem;
 }
 
 .Navbar > img {
     height: 66px;
     width: auto;
+    padding-left: 2rem;
 }

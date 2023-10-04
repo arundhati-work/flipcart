@@ -2,6 +2,7 @@ import Cameras from '../assets/Electronics/Cameras.png';
 import Monitors from '../assets/Electronics/Monitors.png';
 import Pendrives from '../assets/Electronics/Pendrives.png';
 import Projectors from '../assets/Electronics/Projectors.png';
+import Printers from '../assets/Electronics/Printers.png';
 
 const electronics = [
     {
@@ -30,6 +31,13 @@ const electronics = [
         "label": "Projectors",
         "category":"Electronics",
         "image": Projectors,
+        "price": "9999"
+    },
+    {
+        "id": 5,
+        "label": "Printers",
+        "category":"Electronics",
+        "image": Printers,
         "price": "9999"
     },
 ]
