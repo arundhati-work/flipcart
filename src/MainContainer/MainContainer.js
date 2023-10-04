@@ -4,6 +4,7 @@ import Category from '../Category/Category';
 import CategoryData from '../data/CategoryData.js';
 import electronics from '../data/ElectronicsData';
 import fashion from '../data/FashionData';
+import furnitures from '../data/FurnitureData';
 import Tray from '../Tray/Tray';
 
 function MainContainer() {
@@ -25,6 +26,7 @@ function MainContainer() {
             <div className='trays-container'>
                 <Tray category="Electronics" object={electronics}/>
                 <Tray category="Fashion" object={fashion}/>
+                <Tray category="Furniture" object={furnitures}/>
             </div>
         </div>
     )
