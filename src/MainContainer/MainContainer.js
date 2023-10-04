@@ -6,12 +6,12 @@ import electronics from '../data/ElectronicsData';
 import fashion from '../data/FashionData';
 import furnitures from '../data/FurnitureData';
 import Tray from '../Tray/Tray';
+import Footer from '../Footer/Footer';
 
 function MainContainer() {
     return (
         <div className="main-container">
-            <Navbar/>
-            
+            <Navbar/> 
             <div className='categories-section'>
                 <h1>Categories</h1>
                 <div className="categories-container">
@@ -28,6 +28,7 @@ function MainContainer() {
                 <Tray category="Fashion" object={fashion}/>
                 <Tray category="Furniture" object={furnitures}/>
             </div>
+            <Footer/>
         </div>
     )
 }
