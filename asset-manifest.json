@@ -1,31 +1,35 @@
 {
   "files": {
-    "main.css": "/flipcart/static/css/main.ed4cdf12.css",
-    "main.js": "/flipcart/static/js/main.8c833373.js",
+    "main.css": "/flipcart/static/css/main.ab55ea47.css",
+    "main.js": "/flipcart/static/js/main.126b35a1.js",
     "static/js/787.261e7af8.chunk.js": "/flipcart/static/js/787.261e7af8.chunk.js",
+    "static/media/Cabinets.png": "/flipcart/static/media/Cabinets.c592932bb380d10e4f47.png",
     "static/media/Cameras.png": "/flipcart/static/media/Cameras.6bd6d36c2d677d3b3717.png",
     "static/media/KidsWear.png": "/flipcart/static/media/KidsWear.01a3af5479b2763fe691.png",
     "static/media/Jewellery.png": "/flipcart/static/media/Jewellery.94c191697bf76c214323.png",
     "static/media/Printers.png": "/flipcart/static/media/Printers.5b3beff3719a6e2a7a87.png",
+    "static/media/DiningTables.png": "/flipcart/static/media/DiningTables.fd2de278dc35c3ba9daf.png",
+    "static/media/Beds.png": "/flipcart/static/media/Beds.2f945ac8c58d7fe737f5.png",
     "static/media/Projectors.png": "/flipcart/static/media/Projectors.7fd11b0a0cc9a60aa70f.png",
     "static/media/Pendrives.png": "/flipcart/static/media/Pendrives.07677702ef56cca66ce9.png",
     "static/media/Sarees.png": "/flipcart/static/media/Sarees.c6cfa9e7b77c8200e8b8.png",
     "static/media/Kurtas.png": "/flipcart/static/media/Kurtas.ac0bb56cbff13891ece6.png",
     "static/media/Watches.png": "/flipcart/static/media/Watches.1aebb98a829d37c9fe7d.png",
     "static/media/Fashion.png": "/flipcart/static/media/Fashion.71b006c0a1427b59e270.png",
-    "static/media/Groceries.png": "/flipcart/static/media/Groceries.3f3675754abc0f10a02c.png",
     "static/media/Electronics.png": "/flipcart/static/media/Electronics.36d602886f611bd17f65.png",
+    "static/media/Sofas.png": "/flipcart/static/media/Sofas.cfc98b76c7e1556b597e.png",
     "static/media/Phones.png": "/flipcart/static/media/Phones.011a53915075562051e4.png",
     "static/media/Furniture.png": "/flipcart/static/media/Furniture.6699e344e8f6d85edeea.png",
+    "static/media/Lamps.png": "/flipcart/static/media/Lamps.a29d2c46e530075c84ec.png",
     "static/media/Monitors.png": "/flipcart/static/media/Monitors.2f55ff7a5c0d287a8638.png",
     "static/media/logo.svg": "/flipcart/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/flipcart/index.html",
-    "main.ed4cdf12.css.map": "/flipcart/static/css/main.ed4cdf12.css.map",
-    "main.8c833373.js.map": "/flipcart/static/js/main.8c833373.js.map",
+    "main.ab55ea47.css.map": "/flipcart/static/css/main.ab55ea47.css.map",
+    "main.126b35a1.js.map": "/flipcart/static/js/main.126b35a1.js.map",
     "787.261e7af8.chunk.js.map": "/flipcart/static/js/787.261e7af8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ed4cdf12.css",
-    "static/js/main.8c833373.js"
+    "static/css/main.ab55ea47.css",
+    "static/js/main.126b35a1.js"
   ]
 }
