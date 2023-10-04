@@ -3,6 +3,7 @@ import Navbar from '../Navbar/Navbar';
 import Category from '../Category/Category';
 import CategoryData from '../data/CategoryData.js';
 import electronics from '../data/ElectronicsData';
+import fashion from '../data/FashionData';
 import Tray from '../Tray/Tray';
 
 function MainContainer() {
@@ -23,6 +24,7 @@ function MainContainer() {
             </div>
             <div className='trays-container'>
                 <Tray category="Electronics" object={electronics}/>
+                <Tray category="Fashion" object={fashion}/>
             </div>
         </div>
     )
