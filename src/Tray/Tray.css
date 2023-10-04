@@ -1,0 +1,17 @@
+.tray-container{
+    width: 100%;
+    background-color: #E8E8E8;
+    padding: 2rem 0;
+}
+
+.tray-items{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.tray-container > h1{
+    float: left;
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+}

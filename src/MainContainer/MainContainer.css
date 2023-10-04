@@ -16,6 +16,13 @@
     margin: 2rem 0;
 }
 
-.trays-container{
-    background-color: red;
+.categories-section{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.categories-section > h1{
+    font-size: 1.5rem;
 }
