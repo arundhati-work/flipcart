@@ -1,6 +1,7 @@
 .item-container > img {
     width: 80%;
     height: auto;
+    cursor: pointer;
 }
 
 .item-container > p:first-of-type {
