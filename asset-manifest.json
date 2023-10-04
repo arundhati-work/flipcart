@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/flipcart/static/css/main.264a2852.css",
+    "main.css": "/flipcart/static/css/main.3c134e43.css",
     "main.js": "/flipcart/static/js/main.732175f0.js",
     "static/js/787.261e7af8.chunk.js": "/flipcart/static/js/787.261e7af8.chunk.js",
     "static/media/Cabinets.png": "/flipcart/static/media/Cabinets.c592932bb380d10e4f47.png",
@@ -24,12 +24,12 @@
     "static/media/Monitors.png": "/flipcart/static/media/Monitors.2f55ff7a5c0d287a8638.png",
     "static/media/logo.svg": "/flipcart/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/flipcart/index.html",
-    "main.264a2852.css.map": "/flipcart/static/css/main.264a2852.css.map",
+    "main.3c134e43.css.map": "/flipcart/static/css/main.3c134e43.css.map",
     "main.732175f0.js.map": "/flipcart/static/js/main.732175f0.js.map",
     "787.261e7af8.chunk.js.map": "/flipcart/static/js/787.261e7af8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.264a2852.css",
+    "static/css/main.3c134e43.css",
     "static/js/main.732175f0.js"
   ]
 }
