@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+.main-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #F0F0F0;
+    font-family: 'Didact Gothic', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.categories-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 2rem 0;
+}
+
+.trays-container{
+    background-color: red;
+}
