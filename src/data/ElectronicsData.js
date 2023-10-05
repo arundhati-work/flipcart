@@ -10,35 +10,40 @@ const electronics = [
         "label": "Cameras",
         "category":"Electronics",
         "image": Cameras,
-        "price": "3999"
+        "price": "3999",
+        "quantity":0
     },
     {
         "id": 2,
         "label": "Monitors",
         "category":"Electronics",
         "image": Monitors,
-        "price": "7999"
+        "price": "7999",
+        "quantity":0
     },
     {
         "id": 3,
         "label": "Pendrives",
         "category":"Electronics",
         "image": Pendrives,
-        "price": "349"
+        "price": "349",
+        "quantity":1
     },
     {
         "id": 4,
         "label": "Projectors",
         "category":"Electronics",
         "image": Projectors,
-        "price": "9999"
+        "price": "9999",
+        "quantity":0
     },
     {
         "id": 5,
         "label": "Printers",
         "category":"Electronics",
         "image": Printers,
-        "price": "9999"
+        "price": "9999",
+        "quantity":0
     },
 ]
 

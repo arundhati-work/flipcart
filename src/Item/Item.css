@@ -59,7 +59,7 @@
     text-align: left;
 }
 
-.data-div > button {
+.cart-activity > button {
     background-color: #F7C503;
     border: none;
     color: #FFF;
@@ -71,9 +71,25 @@
     transition: 0.5s ease;
 }
 
-.data-div > button:hover {
+.cart-activity > button:hover {
     background-color: #000;
     color: #F7C503;
+}
+
+.cart-activity{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.cart-activity > div{
+    border: 1px solid #F7C503;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 7px;
 }
 
 @media screen and (max-width:1000px) {

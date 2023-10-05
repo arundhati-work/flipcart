@@ -9,7 +9,7 @@ function Tray({category,object}){
         <div className="tray-items">
             {
                 object.map((obj)=>{
-                    return <Item key={obj.id} label={obj.label} image={obj.image} price={obj.price}/>
+                    return <Item key={obj.id} label={obj.label} image={obj.image} price={obj.price} quantity={obj.quantity} setVal={(val)=>obj.quantity = val}/>
                 })
             }
         </div>

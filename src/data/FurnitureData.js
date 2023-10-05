@@ -10,35 +10,40 @@ const furnitures = [
         "label": "Sofas",
         "category":"Furniture",
         "image": Sofas,
-        "price": "19,999"
+        "price": "19,999",
+        "quantity":0
     },
     {
         "id": 2,
         "label": "Cabinets",
         "category":"Furniture",
         "image": Cabinets,
-        "price": "5999"
+        "price": "5999",
+        "quantity":0
     },
     {
         "id": 3,
         "label": "Lamps",
         "category":"Furniture",
         "image": Lamps,
-        "price": "2999"
+        "price": "2999",
+        "quantity":0
     },
     {
         "id": 4,
         "label": "Beds",
         "category":"Furniture",
         "image": Beds,
-        "price": "29,999"
+        "price": "29,999",
+        "quantity":0
     },
     {
         "id": 5,
         "label": "Dining Tables",
         "category":"Furniture",
         "image": DiningTables,
-        "price": "21,999"
+        "price": "21,999",
+        "quantity":0
     },
 ]
 
