@@ -3,7 +3,6 @@ import electronics from '../data/ElectronicsData';
 import fashion from '../data/FashionData';
 import furnitures from '../data/FurnitureData';
 import CartItem from '../CartItem/CartItem';
-import Cameras from '../assets/Electronics/Cameras.png';
 
 function Cart({open, onClose, totalAmount, setTotalAmount, overallQuant, handleOverallQuant}){
     if (!open) return null;
@@ -51,10 +50,6 @@ function Cart({open, onClose, totalAmount, setTotalAmount, overallQuant, handleO
                         }
                     })
                 }
-                {/* <CartItem label="Camera" price="4000" quantity="3" image={Cameras}/>
-                <CartItem label="Camera" price="4000" quantity="3" image={Cameras}/>
-                <CartItem label="Camera" price="4000" quantity="3" image={Cameras}/>
-                <CartItem label="Camera" price="4000" quantity="3" image={Cameras}/> */}
             </div>
             <div className='payment-area'>
                 <div className="amount">Amount: Rs. {totalAmount}</div>
