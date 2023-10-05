@@ -3,8 +3,9 @@ import logo from '../assets/logo.png';
 import React, {useState} from 'react';
 import Cart from '../Cart/Cart';
 
-function Navbar({overallQuant}){
+function Navbar({overallQuant, totalAmount, setTotalAmount, handleOverallQuant}){
     const [isOpen, setIsOpen] = useState(false);
+    
 
     return <div className="Navbar">
         <div className='Logo'>
@@ -13,7 +14,7 @@ function Navbar({overallQuant}){
         </div>
         <div className='Links'>
             <a href='#' onClick={()=>setIsOpen(true)}>Cart ({overallQuant})</a>
-            <Cart open={isOpen} onClose={()=>setIsOpen(false)}/>
+            <Cart open={isOpen} onClose={()=>setIsOpen(false)} totalAmount={totalAmount} setTotalAmount={(val)=>setTotalAmount(val)} overallQuant={overallQuant} handleOverallQuant={(val)=> handleOverallQuant(val)}/>
         </div>
     </div>
 }

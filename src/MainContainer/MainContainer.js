@@ -11,9 +11,10 @@ import React, {useState} from 'react';
 
 function MainContainer() {
     const [overallQuant, setOverallQuant] = useState(0);
+    const [totalAmount, setTotalAmount] = useState(0);
     return (
         <div className="main-container">
-            <Navbar overallQuant={overallQuant}/> 
+            <Navbar overallQuant={overallQuant} totalAmount={totalAmount} setTotalAmount={(val)=>setTotalAmount(val)} handleOverallQuant={(val)=>setOverallQuant(val)}/> 
             <div className='categories-section'>
                 <h1>Categories</h1>
                 <div className="categories-container">
@@ -25,9 +26,9 @@ function MainContainer() {
                 </div>
             </div>
             <div className='trays-container'>
-                <Tray category="Electronics" object={electronics} overallQuant={overallQuant} handleOverallQuant={(val)=>setOverallQuant(val)}/>
-                <Tray category="Fashion" object={fashion} overallQuant={overallQuant} handleOverallQuant={(val)=>setOverallQuant(val)}/>
-                <Tray category="Furniture" object={furnitures} overallQuant={overallQuant} handleOverallQuant={(val)=>setOverallQuant(val)}/>
+                <Tray category="Electronics" object={electronics} overallQuant={overallQuant} handleOverallQuant={(val)=>setOverallQuant(val)} totalAmount={totalAmount} setAmt={(val)=>setTotalAmount(val)}/>
+                <Tray category="Fashion" object={fashion} overallQuant={overallQuant} handleOverallQuant={(val)=>setOverallQuant(val)} totalAmount={totalAmount} setAmt={(val)=>setTotalAmount(val)}/>
+                <Tray category="Furniture" object={furnitures} overallQuant={overallQuant} handleOverallQuant={(val)=>setOverallQuant(val)} totalAmount={totalAmount} setAmt={(val)=>setTotalAmount(val)}/>
             </div>
             <Footer/>
         </div>

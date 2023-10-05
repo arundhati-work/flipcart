@@ -1,6 +1,21 @@
 import './CartItem.css';
+import React, {useState} from 'react';
 
-function CartItem({label, price, quantity, image}){
+function CartItem({label, price, quantity, image, setVal, overallQuant, handleOverallQuant}){
+    const [q, setQ] = useState(quantity);
+
+    const addQHandler = () => {
+        setQ(q+1);
+        setVal(q+1);
+        handleOverallQuant(overallQuant+1);
+    }
+
+    const subQHandler = () => {
+        setQ(q-1);
+        setVal(q-1);
+        handleOverallQuant(overallQuant-1);
+    }
+
     const finalPrice = quantity*price;
     return <div className="cart-item-container">
         <div className='cart-item-image'>
@@ -11,11 +26,11 @@ function CartItem({label, price, quantity, image}){
             <p>Rs. {finalPrice}</p>
         </div>
         <div className='cart-item-quantity'>
-            <button>+</button>
+            <button onClick={addQHandler}>+</button>
             <div className='quantity-number'>
-                <p>{quantity}</p>
+                <p>{q}</p>
             </div>
-            <button>-</button>
+            <button onClick={subQHandler}>-</button>
         </div>
     </div>
 }

@@ -5,8 +5,15 @@ import furnitures from '../data/FurnitureData';
 import CartItem from '../CartItem/CartItem';
 import Cameras from '../assets/Electronics/Cameras.png';
 
-function Cart({open, onClose}){
+function Cart({open, onClose, totalAmount, setTotalAmount, overallQuant, handleOverallQuant}){
     if (!open) return null;
+    const handleTotalAmount = (obj,val) => {
+        var oldAmount = obj.price*obj.quantity;
+        var newAmount = obj.price*val;
+        var netChange = totalAmount - oldAmount + newAmount;
+        setTotalAmount(netChange);
+        obj.quantity = val;
+    }
     return(
         <div className="cart-container">
             <div className='header-container'>
@@ -17,7 +24,7 @@ function Cart({open, onClose}){
                 {
                     electronics.map((electronic)=>{
                         if (electronic.quantity>0){
-                            return <CartItem label={electronic.label} price={electronic.price} quantity={electronic.quantity} image={electronic.image}/>
+                            return <CartItem key={electronic.id} label={electronic.label} price={electronic.price} quantity={electronic.quantity} image={electronic.image} setVal={(val)=>handleTotalAmount(electronic,val)} overallQuant={overallQuant} handleOverallQuant={(val)=> handleOverallQuant(val)}/>
                         }
                         else{
                             return null;
@@ -27,7 +34,7 @@ function Cart({open, onClose}){
                 {
                     fashion.map((fashion)=>{
                         if (fashion.quantity>0){
-                            return <CartItem label={fashion.label} price={fashion.price} quantity={fashion.quantity} image={fashion.image}/>
+                            return <CartItem key={fashion.id} label={fashion.label} price={fashion.price} quantity={fashion.quantity} image={fashion.image} setVal={(val)=>handleTotalAmount(fashion,val)} overallQuant={overallQuant} handleOverallQuant={(val)=> handleOverallQuant(val)}/>
                         }
                         else{
                             return null;
@@ -37,7 +44,7 @@ function Cart({open, onClose}){
                 {
                     furnitures.map((furniture)=>{
                         if (furniture.quantity>0){
-                            return <CartItem label={furniture.label} price={furniture.price} quantity={furniture.quantity} image={furniture.image}/>
+                            return <CartItem key={furniture.id} label={furniture.label} price={furniture.price} quantity={furniture.quantity} image={furniture.image}  setVal={(val)=>handleTotalAmount(furniture,val)} overallQuant={overallQuant} handleOverallQuant={(val)=> handleOverallQuant(val)}/>
                         }
                         else{
                             return null;
@@ -50,7 +57,7 @@ function Cart({open, onClose}){
                 <CartItem label="Camera" price="4000" quantity="3" image={Cameras}/> */}
             </div>
             <div className='payment-area'>
-                <div className="amount">Amount: Rs. 0</div>
+                <div className="amount">Amount: Rs. {totalAmount}</div>
                 <button className="yellow-btn">Proceed to Payment</button>
             </div>
         </div>
