@@ -2,13 +2,14 @@ import './Item.css';
 import React, {useState} from 'react';
 import Modal from '../Modal/Modal';
 
-function Item({image, label, price, quantity, setVal }){
+function Item({image, label, price, quantity, setVal, overallQuant, handleOverallQuant }){
     const [isOpen, setIsOpen] = useState(false);
     const [q, setQ] = useState(quantity);
 
     const addQHandler = () => {
         setQ(q+1);
         setVal(q+1);
+        handleOverallQuant(overallQuant+1);
     }
     return (
     
