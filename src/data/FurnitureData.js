@@ -10,7 +10,7 @@ const furnitures = [
         "label": "Sofas",
         "category":"Furniture",
         "image": Sofas,
-        "price": "19,999",
+        "price": "19999",
         "quantity":0
     },
     {
@@ -34,7 +34,7 @@ const furnitures = [
         "label": "Beds",
         "category":"Furniture",
         "image": Beds,
-        "price": "29,999",
+        "price": "29999",
         "quantity":0
     },
     {
@@ -42,7 +42,7 @@ const furnitures = [
         "label": "Dining Tables",
         "category":"Furniture",
         "image": DiningTables,
-        "price": "21,999",
+        "price": "21999",
         "quantity":0
     },
 ]

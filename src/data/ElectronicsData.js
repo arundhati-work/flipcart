@@ -27,7 +27,7 @@ const electronics = [
         "category":"Electronics",
         "image": Pendrives,
         "price": "349",
-        "quantity":1
+        "quantity":0
     },
     {
         "id": 4,
