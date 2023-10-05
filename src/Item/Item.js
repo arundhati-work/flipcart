@@ -18,12 +18,12 @@ function Item({image, label, price, quantity, setVal, overallQuant, handleOveral
             <div className="modal-contents">
                 <h1>{label}</h1>
                 <div className='modal-data-container'>
-                    <div><img class="modal-img" src={image} alt={label}></img></div>
-                    <div class="data-div">
+                    <div><img className="modal-img" src={image} alt={label}></img></div>
+                    <div className="data-div">
                         <p>Price: {price}</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. </p>
-                        <div class="cart-activity">
-                            <button class="yellow-btn" onClick={addQHandler}>Add to Cart</button>
+                        <div className="cart-activity">
+                            <button className="yellow-btn" onClick={addQHandler}>Add to Cart</button>
                             <div><p>{q}</p></div>
                         </div>
                         

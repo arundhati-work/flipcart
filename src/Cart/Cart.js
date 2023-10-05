@@ -50,8 +50,8 @@ function Cart({open, onClose}){
                 <CartItem label="Camera" price="4000" quantity="3" image={Cameras}/> */}
             </div>
             <div className='payment-area'>
-                <div class="amount">Amount: Rs. 0</div>
-                <button class="yellow-btn">Proceed to Payment</button>
+                <div className="amount">Amount: Rs. 0</div>
+                <button className="yellow-btn">Proceed to Payment</button>
             </div>
         </div>
     );
