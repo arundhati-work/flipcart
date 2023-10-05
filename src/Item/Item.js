@@ -13,7 +13,6 @@ function Item({image, label, price, quantity, setVal, overallQuant, handleOveral
     }
 
     return (
-    
     <div className='item-container'>
         <Modal open={isOpen} onClose={()=> setIsOpen(false)}>
             <div className="modal-contents">

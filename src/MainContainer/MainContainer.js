@@ -2,9 +2,6 @@ import './MainContainer.css';
 import Navbar from '../Navbar/Navbar';
 import Category from '../Category/Category';
 import CategoryData from '../data/CategoryData.js';
-import electronics from '../data/ElectronicsData';
-import fashion from '../data/FashionData';
-import furnitures from '../data/FurnitureData';
 import Tray from '../Tray/Tray';
 import Footer from '../Footer/Footer';
 import React, {useState} from 'react';
@@ -26,9 +23,7 @@ function MainContainer() {
                 </div>
             </div>
             <div className='trays-container'>
-                <Tray category="Electronics" object={electronics} overallQuant={overallQuant} handleOverallQuant={(val)=>setOverallQuant(val)} totalAmount={totalAmount} setAmt={(val)=>setTotalAmount(val)}/>
-                <Tray category="Fashion" object={fashion} overallQuant={overallQuant} handleOverallQuant={(val)=>setOverallQuant(val)} totalAmount={totalAmount} setAmt={(val)=>setTotalAmount(val)}/>
-                <Tray category="Furniture" object={furnitures} overallQuant={overallQuant} handleOverallQuant={(val)=>setOverallQuant(val)} totalAmount={totalAmount} setAmt={(val)=>setTotalAmount(val)}/>
+                <Tray overallQuant={overallQuant} handleOverallQuant={(val)=>setOverallQuant(val)} totalAmount={totalAmount} setAmt={(val)=>setTotalAmount(val)}/>
             </div>
             <Footer/>
         </div>
