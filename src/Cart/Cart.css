@@ -1,0 +1,28 @@
+.cart-container{
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    top:0vh;
+    right:0vw;
+    background-color: #FFF;
+    padding: 1rem 1.5rem;
+    z-index: 9999;
+}
+
+.header-container, .payment-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-items{
+    height: 60vh;
+    overflow: scroll;
+}
+
+@media screen and (max-width:1000px) {
+    .cart-container{
+        width: 90%;
+        height: 100%;
+    }
+}

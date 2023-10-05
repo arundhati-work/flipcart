@@ -23,7 +23,7 @@ function Item({image, label, price, quantity, setVal, overallQuant, handleOveral
                         <p>Price: {price}</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. </p>
                         <div class="cart-activity">
-                            <button onClick={addQHandler}>Add to Cart</button>
+                            <button class="yellow-btn" onClick={addQHandler}>Add to Cart</button>
                             <div><p>{q}</p></div>
                         </div>
                         
