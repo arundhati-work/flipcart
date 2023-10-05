@@ -6,17 +6,24 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #FFF;
-    padding: 50px;
+    padding: 2rem;
     z-index: 9999;
 }
 
 .close-btn {
+    padding-top: 2rem;
+    padding-right: 1rem;
     float: right;
     background-color: transparent;
     border: none;
     font-size: 2rem;
     font-weight: bold;
     font-family: 'Didact Gothic', sans-serif;
-    padding-bottom: 5rem;
 }
 
+@media screen and (max-width:1000px) {
+    .modal-container{
+        width: 90%;
+        padding: 2rem;
+    }
+}
