@@ -2,9 +2,14 @@ import './Item.css';
 import React, {useState} from 'react';
 import Modal from '../Modal/Modal';
 
-function Item({image, label, price}){
+function Item({image, label, price, quantity, setVal }){
     const [isOpen, setIsOpen] = useState(false);
-    const [quantity, setQuantity] = useState(0);
+    const [q, setQ] = useState(quantity);
+
+    const addQHandler = () => {
+        setQ(q+1);
+        setVal(q+1);
+    }
     return (
     
     <div className='item-container'>
@@ -16,8 +21,11 @@ function Item({image, label, price}){
                     <div class="data-div">
                         <p>Price: {price}</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. </p>
-                        <button onClick={()=>setQuantity(quantity+1)}>Add to Cart</button>
-                        <p>{quantity}</p>
+                        <div class="cart-activity">
+                            <button onClick={addQHandler}>Add to Cart</button>
+                            <div><p>{q}</p></div>
+                        </div>
+                        
                     </div>
                 </div>
             </div>          
