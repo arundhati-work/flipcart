@@ -59,7 +59,7 @@
     text-align: left;
 }
 
-.cart-activity > button {
+.yellow-btn {
     background-color: #F7C503;
     border: none;
     color: #FFF;
@@ -71,7 +71,7 @@
     transition: 0.5s ease;
 }
 
-.cart-activity > button:hover {
+.yellow-btn:hover {
     background-color: #000;
     color: #F7C503;
 }
