@@ -14,10 +14,40 @@ function Cart({open, onClose}){
                 <button className='close-btn' onClick={onClose}>x</button>
             </div>
             <div className='cart-items'>
+                {
+                    electronics.map((electronic)=>{
+                        if (electronic.quantity>0){
+                            return <CartItem label={electronic.label} price={electronic.price} quantity={electronic.quantity} image={electronic.image}/>
+                        }
+                        else{
+                            return null;
+                        }
+                    })
+                }
+                {
+                    fashion.map((fashion)=>{
+                        if (fashion.quantity>0){
+                            return <CartItem label={fashion.label} price={fashion.price} quantity={fashion.quantity} image={fashion.image}/>
+                        }
+                        else{
+                            return null;
+                        }
+                    })
+                }
+                {
+                    furnitures.map((furniture)=>{
+                        if (furniture.quantity>0){
+                            return <CartItem label={furniture.label} price={furniture.price} quantity={furniture.quantity} image={furniture.image}/>
+                        }
+                        else{
+                            return null;
+                        }
+                    })
+                }
+                {/* <CartItem label="Camera" price="4000" quantity="3" image={Cameras}/>
                 <CartItem label="Camera" price="4000" quantity="3" image={Cameras}/>
                 <CartItem label="Camera" price="4000" quantity="3" image={Cameras}/>
-                <CartItem label="Camera" price="4000" quantity="3" image={Cameras}/>
-                <CartItem label="Camera" price="4000" quantity="3" image={Cameras}/>
+                <CartItem label="Camera" price="4000" quantity="3" image={Cameras}/> */}
             </div>
             <div className='payment-area'>
                 <div class="amount">Amount: Rs. 0</div>

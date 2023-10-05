@@ -6,11 +6,6 @@ import More from '../assets/categoryImages/More.png';
 
 const categories = [
     {
-        "id": 1,
-        "label": "Phones",
-        "image": Phones
-    },
-    {
         "id": 2,
         "label": "Fashion",
         "image": Fashion
@@ -25,11 +20,6 @@ const categories = [
         "label": "Electronics",
         "image": Electronics
     },
-    {
-        "id": 5,
-        "label": "More",
-        "image": More
-    }
 
 ]
 

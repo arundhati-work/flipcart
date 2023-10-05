@@ -26,8 +26,8 @@ function MainContainer() {
             </div>
             <div className='trays-container'>
                 <Tray category="Electronics" object={electronics} overallQuant={overallQuant} handleOverallQuant={(val)=>setOverallQuant(val)}/>
-                <Tray category="Fashion" object={fashion} handleOverallQuant={(val)=>setOverallQuant(val)}/>
-                <Tray category="Furniture" object={furnitures} handleOverallQuant={(val)=>setOverallQuant(val)}/>
+                <Tray category="Fashion" object={fashion} overallQuant={overallQuant} handleOverallQuant={(val)=>setOverallQuant(val)}/>
+                <Tray category="Furniture" object={furnitures} overallQuant={overallQuant} handleOverallQuant={(val)=>setOverallQuant(val)}/>
             </div>
             <Footer/>
         </div>
