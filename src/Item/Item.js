@@ -4,6 +4,7 @@ import Modal from '../Modal/Modal';
 
 function Item({image, label, price}){
     const [isOpen, setIsOpen] = useState(false);
+    const [quantity, setQuantity] = useState(0);
     return (
     
     <div className='item-container'>
@@ -15,7 +16,8 @@ function Item({image, label, price}){
                     <div class="data-div">
                         <p>Price: {price}</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. </p>
-                        <button>Add to Cart</button>
+                        <button onClick={()=>setQuantity(quantity+1)}>Add to Cart</button>
+                        <p>{quantity}</p>
                     </div>
                 </div>
             </div>          

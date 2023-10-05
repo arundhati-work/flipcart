@@ -4,14 +4,15 @@
     cursor: pointer;
 }
 
-.modal-data-container > div:nth-of-type(1){
+/* .modal-data-container > div:nth-of-type(1){
     width: 70%;
     height: 100%;
-}
+} */
 
 .modal-img{
-    width: 90%;
+    width: 80%;
     height: auto;
+    align-self: flex-start;
 }
 
 .item-container > p:first-of-type {
@@ -25,7 +26,6 @@
 .modal-contents{
     display: flex;
     flex-direction: column;
-    padding: 2rem;
 }
 
 .modal-data-container{
@@ -38,7 +38,7 @@
 .modal-contents > h1{
     float: left;
     width: 20%;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
 .data-div{
@@ -52,7 +52,7 @@
 }
 
 .data-div > p:nth-of-type(2){
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .data-div > p {
