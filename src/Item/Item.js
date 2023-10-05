@@ -11,6 +11,7 @@ function Item({image, label, price, quantity, setVal, overallQuant, handleOveral
         setVal(q+1);
         handleOverallQuant(overallQuant+1);
     }
+
     return (
     
     <div className='item-container'>

@@ -10,7 +10,7 @@ const electronics = [
         "label": "Cameras",
         "category":"Electronics",
         "image": Cameras,
-        "price": "3999",
+        "price": "1000",
         "quantity":0
     },
     {
