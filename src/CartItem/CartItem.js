@@ -1,19 +1,21 @@
 import './CartItem.css';
-import React, {useState} from 'react';
+import React, {useState, useContext} from 'react';
+import { MainContext } from '../MainContainer/MainContainer';
 
-function CartItem({label, price, quantity, image, setVal, overallQuant, handleOverallQuant}){
+function CartItem({label, price, quantity, image, setVal }){ //overallQuant,handleOverallQuant
+    const {overallQuant,setOverallQuant,totalAmount,setTotalAmount} = useContext(MainContext);
     const [q, setQ] = useState(quantity);
 
     const addQHandler = () => {
         setQ(q+1);
         setVal(q+1);
-        handleOverallQuant(overallQuant+1);
+        setOverallQuant(overallQuant+1);
     }
 
     const subQHandler = () => {
         setQ(q-1);
         setVal(q-1);
-        handleOverallQuant(overallQuant-1);
+        setOverallQuant(overallQuant-1);
     }
 
     const finalPrice = quantity*price;
