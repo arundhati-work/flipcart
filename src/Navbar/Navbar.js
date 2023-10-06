@@ -1,9 +1,11 @@
 import './Navbar.css';
 import logo from '../assets/logo.png';
-import React, {useState} from 'react';
+import React, {useState, useContext} from 'react';
 import Cart from '../Cart/Cart';
+import { MainContext } from '../MainContainer/MainContainer';
 
-function Navbar({overallQuant, totalAmount, setTotalAmount, handleOverallQuant}){
+function Navbar({props}){ //overallQuant, totalAmount, setTotalAmount, handleOverallQuant
+    const {overallQuant,setOverallQuant,totalAmount,setTotalAmount} = useContext(MainContext);
     const [isOpen, setIsOpen] = useState(false);
     
 
@@ -14,7 +16,7 @@ function Navbar({overallQuant, totalAmount, setTotalAmount, handleOverallQuant})
         </div>
         <div className='Links'>
             <a href='#' onClick={()=>setIsOpen(true)}>Cart ({overallQuant})</a>
-            <Cart open={isOpen} onClose={()=>setIsOpen(false)} totalAmount={totalAmount} setTotalAmount={(val)=>setTotalAmount(val)} overallQuant={overallQuant} handleOverallQuant={(val)=> handleOverallQuant(val)}/>
+            <Cart open={isOpen} onClose={()=>setIsOpen(false)}/>
         </div>
     </div>
 }

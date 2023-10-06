@@ -3,18 +3,16 @@ import Item from "../Item/Item";
 import electronics from "../data/ElectronicsData";
 import fashion from "../data/FashionData";
 import furnitures from "../data/FurnitureData";
+import React, {useContext} from 'react';
+import { MainContext } from '../MainContainer/MainContainer';
 
-function Tray({
-  overallQuant,
-  handleOverallQuant,
-  totalAmount,
-  setAmt,
-}) {
+function Tray() {
+  const {overallQuant,setOverallQuant,totalAmount,setTotalAmount} = useContext(MainContext);
   const handleTotalAmount = (obj, val) => {
     var oldAmount = obj.price * obj.quantity;
     var newAmount = obj.price * val;
     var netChange = totalAmount - oldAmount + newAmount;
-    setAmt(netChange);
+    setTotalAmount(netChange);
     obj.quantity = val;
   };
 
@@ -32,8 +30,6 @@ function Tray({
                 price={obj.price}
                 quantity={obj.quantity}
                 setVal={(val) => handleTotalAmount(obj, val)}
-                overallQuant={overallQuant}
-                handleOverallQuant={(val) => handleOverallQuant(val)}
               />
             );
           })}
@@ -51,8 +47,6 @@ function Tray({
                 price={obj.price}
                 quantity={obj.quantity}
                 setVal={(val) => handleTotalAmount(obj, val)}
-                overallQuant={overallQuant}
-                handleOverallQuant={(val) => handleOverallQuant(val)}
               />
             );
           })}
@@ -70,8 +64,6 @@ function Tray({
                 price={obj.price}
                 quantity={obj.quantity}
                 setVal={(val) => handleTotalAmount(obj, val)}
-                overallQuant={overallQuant}
-                handleOverallQuant={(val) => handleOverallQuant(val)}
               />
             );
           })}

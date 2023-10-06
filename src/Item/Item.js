@@ -1,15 +1,16 @@
 import './Item.css';
-import React, {useState} from 'react';
-import Modal from '../Modal/Modal';
+import React, {useState,useContext} from 'react';
+import Modal from '../Modal/Modal'; 
+import { MainContext } from '../MainContainer/MainContainer';
 
-function Item({image, label, price, quantity, setVal, overallQuant, handleOverallQuant }){
+function Item({image, label, price, quantity, setVal}){ //, overallQuant, handleOverallQuant 
+    const {overallQuant,setOverallQuant,totalAmount,setTotalAmount} = useContext(MainContext);
     const [isOpen, setIsOpen] = useState(false);
     const [q, setQ] = useState(quantity);
-
     const addQHandler = () => {
         setQ(q+1);
         setVal(q+1);
-        handleOverallQuant(overallQuant+1);
+        setOverallQuant(overallQuant+1);
     }
 
     return (
